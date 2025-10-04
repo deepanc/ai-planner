@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>House/Office Shifting - ProjectFlow</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="page-header">
+      <button class="back-button" id="backFromHouse">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <h2>House/Office Shifting</h2>
+      <div></div>
+      <!-- Empty div for spacing -->
+    </header>
+
+    <!-- Main Content -->
+    <main class="house-content">
+      <div class="board-section">
+        <h3 class="board-heading">Board</h3>
+
+        <!-- Input Fields -->
+        <div class="input-fields">
+          <div class="input-group">
+            <label for="currentAddress">Current Address</label>
+            <input
+              type="text"
+              id="currentAddress"
+              placeholder="Enter current address"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="newAddress">New Address</label>
+            <input
+              type="text"
+              id="newAddress"
+              placeholder="Enter new address"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="moveDate">Moving Date</label>
+            <input type="date" id="moveDate" />
+          </div>
+        </div>
+
+        <!-- Action Buttons Grid -->
+        <div class="action-buttons-grid">
+          <button class="action-btn" data-action="movers">
+            <i class="fas fa-truck"></i>
+            <span>Find Movers</span>
+          </button>
+
+          <button class="action-btn" data-action="packing">
+            <i class="fas fa-box"></i>
+            <span>Pack Belongings</span>
+          </button>
+
+          <button class="action-btn" data-action="address">
+            <i class="fas fa-address-book"></i>
+            <span>Update Address</span>
+          </button>
+
+          <button class="action-btn" data-action="utilities">
+            <i class="fas fa-bolt"></i>
+            <span>Transfer Utilities</span>
+          </button>
+
+          <button class="action-btn" data-action="cleaning">
+            <i class="fas fa-broom"></i>
+            <span>Clean Old Place</span>
+          </button>
+
+          <button class="action-btn" data-action="settling">
+            <i class="fas fa-home"></i>
+            <span>Settle In</span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <div class="nav-item">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </div>
+      <div class="nav-item active">
+        <i class="fas fa-briefcase"></i>
+        <span>Projects</span>
+      </div>
+      <div class="nav-item">
+        <i class="fas fa-tasks"></i>
+        <span>Tasks</span>
+      </div>
+      <div class="nav-item">
+        <i class="fas fa-cog"></i>
+        <span>Settings</span>
+      </div>
+    </nav>
+
+    <script src="js/api.js"></script>
+    <script src="house-shifting.js"></script>
+  </body>
+</html>

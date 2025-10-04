@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose a template - ProjectFlow</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="page-header">
+      <button class="back-button" id="backFromTemplates">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <h2>Choose a template</h2>
+      <div></div>
+      <!-- Empty div for spacing -->
+    </header>
+
+    <!-- Templates Content -->
+    <main class="templates-content">
+      <h3 class="templates-heading">Templates</h3>
+
+      <div class="templates-list">
+        <div class="template-item" data-template="travel">
+          <div class="template-info">
+            <h4 class="template-title">Travel</h4>
+            <p class="template-description">
+              Plan your next adventure with a detailed itinerary, packing lists,
+              and budget tracking.
+            </p>
+          </div>
+          <div class="template-thumbnail travel-thumbnail">
+            <div class="thumbnail-content">
+              <div class="beach-scene">
+                <div class="palm-trees"></div>
+                <div class="water"></div>
+                <div class="land"></div>
+              </div>
+              <div class="calendar-mini">
+                <span>DAY</span>
+                <span>MONTH</span>
+                <span>YEAR</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="template-item" data-template="event">
+          <div class="template-info">
+            <h4 class="template-title">Event Planning</h4>
+            <p class="template-description">
+              Organize every detail of your event, from venue to guest list.
+            </p>
+          </div>
+          <div class="template-thumbnail event-thumbnail">
+            <div class="thumbnail-content">
+              <div class="plant-scene">
+                <div class="plant-pot"></div>
+                <div class="wall-lines"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="template-item" data-template="house-shifting">
+          <div class="template-info">
+            <h4 class="template-title">House/Office Shifting</h4>
+            <p class="template-description">
+              Manage your move with checklists, timelines, and vendor contacts.
+            </p>
+          </div>
+          <div class="template-thumbnail house-thumbnail">
+            <div class="thumbnail-content">
+              <div class="house-scene">
+                <div class="house"></div>
+                <div class="plants"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="template-item" data-template="roadmap">
+          <div class="template-info">
+            <h4 class="template-title">Product Roadmap</h4>
+            <p class="template-description">
+              Visualize your product's journey and prioritize features.
+            </p>
+          </div>
+          <div class="template-thumbnail roadmap-thumbnail">
+            <div class="thumbnail-content">
+              <div class="landscape-scene">
+                <div class="hills"></div>
+                <div class="water-body"></div>
+                <div class="panels"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <div class="nav-item">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </div>
+      <div class="nav-item active">
+        <i class="fas fa-briefcase"></i>
+        <span>Projects</span>
+      </div>
+      <div class="nav-item">
+        <i class="fas fa-tasks"></i>
+        <span>Tasks</span>
+      </div>
+      <div class="nav-item">
+        <i class="fas fa-cog"></i>
+        <span>Settings</span>
+      </div>
+    </nav>
+
+    <script src="js/api.js"></script>
+    <script src="templates.js"></script>
+  </body>
+</html>

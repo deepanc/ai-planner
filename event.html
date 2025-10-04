@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Planning - ProjectFlow</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="page-header">
+      <button class="back-button" id="backFromEvent">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <h2>Event Planning</h2>
+      <div></div>
+      <!-- Empty div for spacing -->
+    </header>
+
+    <!-- Main Content -->
+    <main class="event-content">
+      <div class="board-section">
+        <h3 class="board-heading">Board</h3>
+
+        <!-- Input Fields -->
+        <div class="input-fields">
+          <div class="input-group">
+            <label for="eventName">Event Name</label>
+            <input type="text" id="eventName" placeholder="Enter event name" />
+          </div>
+
+          <div class="input-group">
+            <label for="eventDate">Event Date</label>
+            <input type="date" id="eventDate" />
+          </div>
+
+          <div class="input-group">
+            <label for="guestCount">Expected Guests</label>
+            <input
+              type="number"
+              id="guestCount"
+              placeholder="Number of guests"
+            />
+          </div>
+        </div>
+
+        <!-- Action Buttons Grid -->
+        <div class="action-buttons-grid">
+          <button class="action-btn" data-action="venue">
+            <i class="fas fa-building"></i>
+            <span>Choose Venue</span>
+          </button>
+
+          <button class="action-btn" data-action="guests">
+            <i class="fas fa-users"></i>
+            <span>Create Guest List</span>
+          </button>
+
+          <button class="action-btn" data-action="catering">
+            <i class="fas fa-utensils"></i>
+            <span>Plan Catering</span>
+          </button>
+
+          <button class="action-btn" data-action="entertainment">
+            <i class="fas fa-music"></i>
+            <span>Book Entertainment</span>
+          </button>
+
+          <button class="action-btn" data-action="invitations">
+            <i class="fas fa-envelope"></i>
+            <span>Send Invitations</span>
+          </button>
+
+          <button class="action-btn" data-action="budget">
+            <i class="fas fa-calculator"></i>
+            <span>Manage Budget</span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <div class="nav-item">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </div>
+      <div class="nav-item active">
+        <i class="fas fa-briefcase"></i>
+        <span>Projects</span>
+      </div>
+      <div class="nav-item">
+        <i class="fas fa-tasks"></i>
+        <span>Tasks</span>
+      </div>
+      <div class="nav-item">
+        <i class="fas fa-cog"></i>
+        <span>Settings</span>
+      </div>
+    </nav>
+
+    <script src="js/api.js"></script>
+    <script src="event.js"></script>
+  </body>
+</html>

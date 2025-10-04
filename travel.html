@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Planning - ProjectFlow</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="page-header">
+      <button class="back-button" id="backFromTravel">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <h2>Travel Planning</h2>
+      <div></div>
+      <!-- Empty div for spacing -->
+    </header>
+
+    <!-- Main Content -->
+    <main class="travel-content">
+      <div class="board-section">
+        <h3 class="board-heading">Board</h3>
+
+        <!-- Input Fields -->
+        <div class="input-fields">
+          <div class="input-group">
+            <label for="source">Source</label>
+            <input type="text" id="source" placeholder="Enter Source" />
+          </div>
+
+          <div class="input-group">
+            <label for="destination">Destination</label>
+            <input
+              type="text"
+              id="destination"
+              placeholder="Enter Destination"
+            />
+          </div>
+
+          <div class="date-inputs-row">
+            <div class="input-group">
+              <label for="fromDate">From Date</label>
+              <input type="date" id="fromDate" />
+            </div>
+
+            <div class="input-group">
+              <label for="toDate">To Date</label>
+              <input type="date" id="toDate" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Buttons Grid -->
+        <div class="action-buttons-grid">
+          <button class="action-btn" data-action="flights">
+            <i class="fas fa-plane"></i>
+            <span>Book Flights</span>
+          </button>
+
+          <button class="action-btn" data-action="hotels">
+            <i class="fas fa-bed"></i>
+            <span>Reserve Hotels</span>
+          </button>
+
+          <button class="action-btn" data-action="itinerary">
+            <i class="fas fa-map-pin"></i>
+            <span>Plan Itinerary</span>
+          </button>
+
+          <button class="action-btn" data-action="activities">
+            <i class="fas fa-calendar-day"></i>
+            <span>Schedule Activities</span>
+          </button>
+
+          <button class="action-btn" data-action="tickets">
+            <i class="fas fa-ticket-alt"></i>
+            <span>Purchase Tickets</span>
+          </button>
+
+          <button class="action-btn" data-action="budget">
+            <i class="fas fa-coins"></i>
+            <span>Budget Expenses</span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <div class="nav-item">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </div>
+      <div class="nav-item active">
+        <i class="fas fa-briefcase"></i>
+        <span>Projects</span>
+      </div>
+      <div class="nav-item">
+        <i class="fas fa-tasks"></i>
+        <span>Tasks</span>
+      </div>
+      <div class="nav-item">
+        <i class="fas fa-cog"></i>
+        <span>Settings</span>
+      </div>
+    </nav>
+
+    <script src="js/api.js"></script>
+    <script src="travel.js"></script>
+  </body>
+</html>

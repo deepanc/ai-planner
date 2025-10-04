@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Roadmap - ProjectFlow</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="page-header">
+      <button class="back-button" id="backFromRoadmap">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <h2>Product Roadmap</h2>
+      <div></div>
+      <!-- Empty div for spacing -->
+    </header>
+
+    <!-- Main Content -->
+    <main class="roadmap-content">
+      <div class="board-section">
+        <h3 class="board-heading">Board</h3>
+
+        <!-- Input Fields -->
+        <div class="input-fields">
+          <div class="input-group">
+            <label for="productName">Product Name</label>
+            <input
+              type="text"
+              id="productName"
+              placeholder="Enter product name"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="targetMarket">Target Market</label>
+            <input
+              type="text"
+              id="targetMarket"
+              placeholder="Define target market"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="launchDate">Launch Date</label>
+            <input type="date" id="launchDate" />
+          </div>
+        </div>
+
+        <!-- Action Buttons Grid -->
+        <div class="action-buttons-grid">
+          <button class="action-btn" data-action="vision">
+            <i class="fas fa-eye"></i>
+            <span>Define Vision</span>
+          </button>
+
+          <button class="action-btn" data-action="research">
+            <i class="fas fa-search"></i>
+            <span>Research Market</span>
+          </button>
+
+          <button class="action-btn" data-action="features">
+            <i class="fas fa-list"></i>
+            <span>Define Features</span>
+          </button>
+
+          <button class="action-btn" data-action="timeline">
+            <i class="fas fa-calendar-alt"></i>
+            <span>Create Timeline</span>
+          </button>
+
+          <button class="action-btn" data-action="resources">
+            <i class="fas fa-users-cog"></i>
+            <span>Assign Resources</span>
+          </button>
+
+          <button class="action-btn" data-action="tracking">
+            <i class="fas fa-chart-line"></i>
+            <span>Track Progress</span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <div class="nav-item">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </div>
+      <div class="nav-item active">
+        <i class="fas fa-briefcase"></i>
+        <span>Projects</span>
+      </div>
+      <div class="nav-item">
+        <i class="fas fa-tasks"></i>
+        <span>Tasks</span>
+      </div>
+      <div class="nav-item">
+        <i class="fas fa-cog"></i>
+        <span>Settings</span>
+      </div>
+    </nav>
+
+    <script src="js/api.js"></script>
+    <script src="product-roadmap.js"></script>
+  </body>
+</html>
